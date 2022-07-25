@@ -13,7 +13,7 @@ const initialState: ICards = {
 
 
 export const CardSlice = createSlice({
-    name: 'book',
+    name: 'toDo',
     initialState,
     reducers: {
         addItem(state, action: PayloadAction<{ value: string, date: number }>): void {

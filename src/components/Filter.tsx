@@ -7,9 +7,11 @@ const Filter = () => {
     const dispatch = useAppDispatch()
     const {settings} = useAppSelector(state => state.cards)
 
-    const toggleClass = value => value === settings ? cl.active : cl.item
+    const toggleClass = (value:string) => value === settings ? cl.active : cl.item
     return (
-        <div className={cl.items} onClick={async (e) => {
+        <div className={cl.items} onClick={async (e:React.SyntheticEvent<EventTarget>) => {
+            if (!(e.target instanceof HTMLDivElement)) return
+
             if (!e.target.dataset.value) return false
             await dispatch(CardSlice.actions.filterItems(e.target.dataset.value))
 
