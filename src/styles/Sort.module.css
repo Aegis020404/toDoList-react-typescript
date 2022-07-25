@@ -1,0 +1,10 @@
+.up , .down {
+    display: inline-block;
+    transform: rotate(300grad);
+    cursor: pointer;
+}
+.up:hover , .down:hover {
+    font-weight: bolder;
+    transform: scale(1.5) rotate(300grad);
+    color: gold;
+}

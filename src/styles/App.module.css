@@ -1,0 +1,117 @@
+.App {
+    margin: 0 auto;
+    max-width: 750px;
+    background: #f5f5f5;
+    color: var(--main-color)
+}
+
+.title {
+}
+
+.controls {
+    position: relative;
+    margin: 15px 0;
+    padding: 10px 20px;
+    box-shadow: 0 5px 5px -1px var(--main-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.input {
+    -webkit-box-shadow: -11px 9px 72px 25px rgba(34, 60, 80, 0.2);
+    -moz-box-shadow: -11px 9px 72px 25px rgba(34, 60, 80, 0.2);
+    box-shadow: -11px 9px 72px 25px rgba(34, 60, 80, 0.2);
+    border: none;
+    outline: none;
+    width: 600px;
+    padding: 10px 5px;
+}
+
+.input:active {
+    outline: none;
+}
+.count {
+    font-weight: 700;
+    bottom: 15px;
+    right: 15px;
+    position: absolute;
+
+}
+.btn {
+    margin-bottom: 10px ;
+    border: none;
+    padding: 10px 30px;
+    font-size: 24px;
+    cursor: pointer;
+    border-radius: 7px;
+    border-bottom-left-radius: 0;
+    background-color: var(--main-color);
+    color: white;
+}
+.btn:hover {
+    box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.6);
+}
+.btn:disabled {
+    background: gray;
+}
+.btn:disabled:hover {
+    box-shadow:none;
+    background: gray;
+}
+.cards {
+    position: relative;
+    padding: 0;
+}
+
+.card {
+    margin: 0 auto;
+    width: 100%;
+    background: white;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: .35s all;
+}
+.card:hover {
+    box-shadow: 5px 5px 5px -5px rgba(34, 60, 80, 0.6);
+    z-index: 2;
+    transform: scale(1.1);
+}
+
+
+.imageWrap {
+    transition: .4s all;
+    margin-left: 20px;
+    width: 100px;
+
+}
+.imageWrap:hover {
+    margin-top: 5px;
+    margin-left: 40px;
+    border-radius: 100%;
+    cursor: pointer;
+    transform:rotate(30deg)  scale(.98);
+}
+
+
+.value {
+    text-transform: uppercase
+}
+
+.strike {
+    opacity: 0.6;
+    text-decoration: line-through;
+}
+.destroy {
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+    font-weight: bold;
+    max-width: 150px;
+    cursor: pointer;
+}
+.destroy:hover {
+    color:gold;
+}

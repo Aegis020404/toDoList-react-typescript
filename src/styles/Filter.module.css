@@ -1,0 +1,17 @@
+.items {
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.item {
+    cursor: pointer;
+    margin: 15px;
+}
+.item:hover{
+    font-weight: bold;
+}
+.active {
+    color:gold;
+    margin: 15px;
+}
