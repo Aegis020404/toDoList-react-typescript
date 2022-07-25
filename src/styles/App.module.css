@@ -6,6 +6,7 @@
 }
 
 .title {
+    text-align: center;
 }
 
 .controls {
@@ -115,3 +116,68 @@
 .destroy:hover {
     color:gold;
 }
+
+@media (max-width: 850px) {
+    .card {
+        width: 100%;
+    }
+    .card:hover {
+        transform: none;
+    }
+}
+@media (max-width: 640px) {
+    .input {
+        max-width: 500px;
+    }
+}
+
+@media (max-width: 640px) {
+    .input {
+        max-width: 400px;
+    }
+    .controls {
+        padding-bottom: 40px;
+    }
+}
+
+@media (max-width: 450px) {
+    .input {
+        max-width: 320px;
+    }
+    .controls {
+        padding-bottom: 40px;
+    }
+}
+
+@media (max-width: 360px) {
+    .input {
+        max-width: 350px;
+    }
+    .controls {
+        padding-bottom: 40px;
+    }
+    .count {
+        top: 0;
+        bottom: auto;
+        width: 100%;
+        left: 50%;
+        transform: translateX(-50%);
+        text-align: center;
+    }
+    .destroy {
+        width: 100%;
+        left: 50%;
+        transform: translateX(-50%);
+        text-align: center;
+    }
+    .input {
+        max-width: 250px;
+    }
+    .imageWrap {
+        display: none;
+    }
+    .card {
+        min-height: 50px;
+    }
+}
+

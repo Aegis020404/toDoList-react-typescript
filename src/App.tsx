@@ -48,7 +48,8 @@ function App() {
                     await dispatch(CardSlice.actions.ClearCompleted())
                 }}>Clear Completed</div>
             </form>
-            <Filter/>
+
+            {visible.length ? <Filter/> :  <h2 className={cl.title}> Заметок нет</h2> }
             <ul className={cl.cards}>
                 {cards.map((el: ICard, idx: number) =>
                     <li key={idx}
